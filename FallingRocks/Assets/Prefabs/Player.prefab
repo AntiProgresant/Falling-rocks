@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 7835828057801914696}
   - component: {fileID: 7835828057801914679}
   - component: {fileID: 7835828057801914678}
+  - component: {fileID: 7835828057801914674}
   - component: {fileID: 7835828057801914677}
   - component: {fileID: 7835828057801914676}
   m_Layer: 0
@@ -112,6 +113,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7835828057801914674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7835828057801914673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae9222f457802b4cbf9ebf9064f6d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 7835828057801914676}
+  walkSpeed: 4
+  runSpeed: 8
+  turnSmoothTime: 0.2
+  speedSmoothTime: 0.2
+  health: 4
+  numOfHearts: 4
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  FullHearts: {fileID: 21300000, guid: 3cc601ecb306ba3458a5d0389b5c4a53, type: 3}
+  EmptyHearts: {fileID: 21300000, guid: 19ac796c2971b7e46a56d8608258dd65, type: 3}
 --- !u!65 &7835828057801914677
 BoxCollider:
   m_ObjectHideFlags: 0
