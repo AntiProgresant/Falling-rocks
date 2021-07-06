@@ -14,6 +14,11 @@ public class FallScripts : MonoBehaviour
 
     int randEnemy;
 
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(transform.position, new Vector3(spawnValues.x, spawnValues.y, spawnValues.z));
+    }
 
     // Start is called before the first frame update
     void Start()
